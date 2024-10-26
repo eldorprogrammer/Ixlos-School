@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # other apps
     'common.apps.CommonConfig',
+    'students.apps.StudentsConfig',
+    'teachers.apps.TeachersConfig',
 ]
 
 MIDDLEWARE = [
@@ -105,6 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
+
 LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'Asia/Tashkent'
@@ -119,14 +122,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     # "/var/www/static/",
 ]
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDI_ROOT = 'media/'
